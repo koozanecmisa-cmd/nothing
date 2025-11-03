@@ -68,3 +68,94 @@ img[alt = phone3a] {
 .descript {
     border-radius: 10px;
 }
+/* Адаптивность для всех устройств */
+* {
+    box-sizing: border-box;
+}
+
+/* Мобильные устройства (до 768px) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .manual {
+        width: 100% !important;
+        height: auto !important;
+    }
+    
+    .manual .sidebar, 
+    .manual .content {
+        display: block;
+        width: 100% !important;
+    }
+    
+    .manual .sidebar {
+        height: auto !important;
+        margin-bottom: 15px;
+    }
+    
+    .catalog {
+        grid-template-columns: 1fr !important;
+        padding: 10px !important;
+    }
+    
+    .phone-card {
+        padding: 15px !important;
+    }
+    
+    .phone-card img {
+        max-width: 150px !important;
+    }
+    
+    h1 { font-size: 24px; }
+    h2 { font-size: 20px; }
+    h3 { font-size: 18px; }
+}
+
+/* Планшеты (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .catalog {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    
+    .manual {
+        width: 95% !important;
+    }
+}
+
+/* Компьютеры (1025px+) */
+@media (min-width: 1025px) {
+    .catalog {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+
+/* Улучшаем таблицу для мобильных */
+@media (max-width: 768px) {
+    table.manual {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .manual td {
+        padding: 8px;
+        font-size: 12px;
+    }
+}
+
+/* Улучшаем изображения */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Навигация для мобильных */
+@media (max-width: 768px) {
+    a {
+        display: inline-block;
+        padding: 8px 12px;
+        margin: 5px 0;
+    }
+}
