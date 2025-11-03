@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог смартфонов</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-91TYSC1M7B"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-91TYSC1M7B');
+    </script>
+    <style>
+        .catalog {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .phone-card {
+            background: #1a1a1a;
+            border: 2px solid #333;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .phone-card:hover {
+            transform: translateY(-5px);
+            border-color: red;
+        }
+        .phone-card img {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body style="background-color: black">
+    <h1>📱 Каталог смартфонов</h1>
+    <a href="index.html">← Назад на главную</a>
+    
+    <div class="catalog">
+        <div class="phone-card">
+            <img src="html/урок 1/img/phone3a-removebg-preview.png" alt="Nothing Phone 3A">
+            <h2>Nothing Phone 3A</h2>
+            <p>8/128GB • Snapdragon 7s Gen 3</p>
+            <a href="html/урок 1/catalog/nothingphone.html">Подробнее →</a>
+        </div>
+        
+        <!-- Можно добавить другие смартфоны позже -->
+        <div class="phone-card">
+            <h2>+ Добавить новый смартфон</h2>
+            <p>Скоро...</p>
+        </div>
+    </div>
+</body>
+</html>
