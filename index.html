@@ -5,20 +5,64 @@
     <title>Главная страница</title>
     <link rel="stylesheet" href="CSS/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-91TYSC1M7B"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-91TYSC1M7B');
-</script>
+    <style>
+        .main-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .catalog-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 20px 0;
+            background: transparent;
+            border: 2px solid whitesmoke;
+            border-radius: 8px;
+            color: whitesmoke;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: all 0.3s;
+        }
+        .catalog-btn:hover {
+            border-color: red;
+            color: red;
+            transform: scale(1.05);
+        }
+        .contacts-link {
+            color: #888;
+            text-decoration: none;
+            border-bottom: 1px solid #888;
+            padding-bottom: 2px;
+        }
+        .contacts-link:hover {
+            color: whitesmoke;
+            border-color: whitesmoke;
+        }
+    </style>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-91TYSC1M7B"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-91TYSC1M7B');
+    </script>
 </head>
 <body style="background-color: black">
-    <h1>Главная страница</h1>
-    <a href="html/урок 1/contacs.html">Перейти в контакты</a>
-    <h1>Каталог</h1>
-<a href="catalog.html"><h1>смартфоны</h1></a>
+    <div class="main-container">
+        <h1>Nothing</h1>
+        <p>Технологии. Прозрачность. Инновации.</p>
+        
+        <a href="catalog.html" class="catalog-btn">
+            Смотреть смартфоны
+        </a>
+        
+        <br><br>
+        
+        <a href="html/урок 1/contacs.html" class="contacts-link">
+            Контакты
+        </a>
+    </div>
 </body>
 </html>
