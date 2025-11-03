@@ -159,3 +159,81 @@ img {
         margin: 5px 0;
     }
 }
+/* Мобильная адаптация для таблицы */
+@media (max-width: 768px) {
+    table.manual {
+        display: block;
+        width: 100% !important;
+    }
+    
+    table.manual thead,
+    table.manual tbody,
+    table.manual tr {
+        display: block;
+        width: 100% !important;
+    }
+    
+    table.manual td {
+        display: block;
+        width: 100% !important;
+        border: none !important;
+        padding: 10px !important;
+    }
+    
+    table.manual .header {
+        text-align: center;
+        padding: 15px !important;
+    }
+    
+    table.manual .footer {
+        text-align: center;
+        padding: 10px !important;
+    }
+    
+    /* Убираем фиксированные размеры */
+    .manual {
+        width: 100% !important;
+        height: auto !important;
+        border-spacing: 0 !important;
+    }
+    
+    /* Адаптируем iframe */
+    iframe {
+        width: 100% !important;
+        height: 200px !important;
+    }
+    
+    /* Адаптируем таблицу с картинками */
+    table:not(.manual) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    table:not(.manual) td {
+        display: block;
+        margin: 5px;
+    }
+}
+
+/* Для очень маленьких экранов */
+@media (max-width: 480px) {
+    body {
+        padding: 5px !important;
+    }
+    
+    .manual td {
+        padding: 5px !important;
+    }
+    
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    
+    /* Делаем кнопки больше */
+    .toggle-btn {
+        padding: 12px 20px !important;
+        font-size: 16px !important;
+    }
+}
