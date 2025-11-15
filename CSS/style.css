@@ -238,8 +238,6 @@ img {
     }
 }
 body {
-  /* Arial — выбор народный! */
-  font-family: 'Courier New', sans-serif;
+  font-family: "Courier New", Courier, monospace;
 }
-
 
