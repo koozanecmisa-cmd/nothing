@@ -238,7 +238,14 @@ img {
     }
 }
 /* styles.css */
+@font-face {
+  font-family: 'NdotFont';
+  src: url('../Ndot-57.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
-  font-family: 'Courier New', monospace;
+  font-family: 'NdotFont', sans-serif !important;
 }
 
