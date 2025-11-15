@@ -237,3 +237,9 @@ img {
         font-size: 16px !important;
     }
 }
+body {
+  /* Arial — выбор народный! */
+  font-family: 'Courier New', sans-serif;
+}
+
+
